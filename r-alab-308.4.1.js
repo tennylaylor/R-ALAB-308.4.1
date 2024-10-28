@@ -38,3 +38,31 @@ for (let i = 1; i < formatteddata.length; i++) {   // Loop through columns
 console.log(objects);
 
 /// ==================part 4 ===============//
+let removeend = objects.pop(); //remove last row//
+
+//console.log(objects);
+
+let newobject = { id: "48", name: "Barry", occupation: "Runner", age: "25" }; //new row to insert
+
+objects.splice(1,0, newobject); // insert new row
+
+console.log(objects); // updated row
+
+
+let nuuobject = { id: "7", name: "Bilbo", occupation: "None", age: "111" }; // add new object
+
+objects.push(nuuobject);
+
+console.log(objects);
+
+
+//=========== Part 5 ==========//
+
+let totalage = 0; //initializer for age
+
+for (let i=0; i < objects.length; i++) { // loop for age sum
+  totalage += Number(objects[i].age);
+}
+let averageage= totalage/objects.length;
+
+console.log(averageage);
