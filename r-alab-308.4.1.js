@@ -40,7 +40,7 @@ console.log(objects);
 /// ==================part 4 ===============//
 let removeend = objects.pop(); //remove last row//
 
-//console.log(objects);
+//console.log(objects);  //Remove to activeate.
 
 let newobject = { id: "48", name: "Barry", occupation: "Runner", age: "25" }; //new row to insert
 
@@ -56,7 +56,7 @@ objects.push(nuuobject);
 console.log(objects);
 
 
-//=========== Part 5 ==========//
+//=========== Part  4 B ==========//
 
 let totalage = 0; //initializer for age
 
@@ -66,3 +66,5 @@ for (let i=0; i < objects.length; i++) { // loop for age sum
 let averageage= totalage/objects.length;
 
 console.log(averageage);
+
+//==============part 5 ========//
